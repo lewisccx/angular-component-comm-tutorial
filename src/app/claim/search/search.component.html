@@ -1,0 +1,8 @@
+<p>search works! </p>
+<p *ngIf="user">
+    {{user.nric}}
+</p>
+<app-record [record]="record" [profile] ="profile" (computedClaimAmt)="receiveUserObj($event)"></app-record>
+
+<h3>Payments</h3>
+<p>{{ payments | json}}</p>
